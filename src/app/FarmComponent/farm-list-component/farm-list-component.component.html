@@ -1,0 +1,27 @@
+<div class="container">
+<h2>Farms List</h2>
+  <table class="table table-striped">
+    <thead class="table-dark">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Area</th>
+      <th>Longitude</th>
+      <th>Latitude</th>
+      <th>Address</th>
+      <th>Sensors</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let farm of farms">
+      <td>{{farm.idFarm}}</td>
+      <td>{{farm.name}}</td>
+      <td>{{farm.area}}</td>
+      <td>{{farm.longitude}}</td>
+      <td>{{farm.latitude}}</td>
+      <td>{{farm.address}}</td>
+      <td>{{farm.sensorNames}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
